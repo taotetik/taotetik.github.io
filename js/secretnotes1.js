@@ -14,9 +14,6 @@ setInterval(function() {
     if (encrypted_text.length <= 1) get_encrypted_message();
 }, 2000);
 
-console.log(my_aes.encryptMessage('Welcome to AES !', 'your_password'));
-console.log(my_aes.decryptMessage('U2FsdGVkX1/S5oc9WgsNyZb8TJHsuL7+p4yArjEpOCYgDTUdkVxkmr+E+NdJmro9', 'your_password'));
-
 var is_correctly_decrypted = function(dec_text) {
     var sha512hash = CryptoJS.SHA512(dec_text).toString();
     return sha512hash == "a3a39eb7baba0698fb8c917432a872167a38578d99c568779a90513377d76e24c27ece4af89b36baec32d4161ec272007cab5728e7c90f8b54af9fcb2d25d117";
@@ -46,7 +43,7 @@ var get_decrypted_text = function(pass) {
 
 function open_notes() {
     var entered_pass = document.getElementById("notepass").value;
-    console.log('Entered pass: ' + entered_pass);
+    //console.log('Entered pass: ' + entered_pass);
     var decrypted = get_decrypted_text(entered_pass);
     if (is_correctly_decrypted(decrypted)) {
         document.getElementById("passnotesbox").innerHTML = decrypted;
