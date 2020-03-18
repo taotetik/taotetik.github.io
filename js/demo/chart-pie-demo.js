@@ -7,7 +7,7 @@ var ctx = document.getElementById("myPieChart");
 var myPieChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
-        labels: ["Old (2018-2019)", "New (2020)", "Edited (Old)"],
+        labels: ["New (2020)", "Old (2018-2019)", "Edited (Old)"],
         datasets: [{
             //data: [67814, 56744, 4168], // 28.02.2020
             //data: [67814, 58107, 4168], // 03.03.2020
