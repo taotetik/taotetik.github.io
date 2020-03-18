@@ -11,7 +11,8 @@ var myPieChart = new Chart(ctx, {
         datasets: [{
             //data: [67814, 56744, 4168], // 28.02.2020
             //data: [67814, 58107, 4168], // 03.03.2020
-            data: [67814, 58107, 6515], // 09.03.2020
+            //data: [67814, 58107, 6515], // 09.03.2020
+            data: [67814, 73261, 6515], // 18.03.2020
             backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc'],
             hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf'],
             hoverBorderColor: "rgba(234, 236, 244, 1)",
